@@ -1,0 +1,18 @@
+// Example of using Asset Manager to load a sprite from GitHub
+// URL of the sprite image on GitHub
+const spriteUrl = 'https://github.com/username/repository/raw/main/sprite.png';
+
+// Function to load and add the sprite
+function loadSprite(url) {
+  // Use Asset Manager's method to load sprite
+  AssetManager.load(url).then((sprite) => {
+    // Add the sprite to the project
+    // Assuming `project` is your TurboWarp project
+    project.addSprite(sprite);
+  }).catch((error) => {
+    console.error('Error loading sprite:', error);
+  });
+}
+
+// Call the function to load your sprite
+loadSprite(spriteUrl);
