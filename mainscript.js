@@ -1,4 +1,4 @@
-// Example script to test fetch and execution via bookmarklet
+// Example script to test fetch and execution 
 (function() {
     // Create a container for the UI
     const container = document.createElement('div');
